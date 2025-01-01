@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shop"
+    android:gravity="center"
+    tools:context=".SettingsScene">
+
+    <ImageView
+        android:id="@+id/settings_back"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:orientation="vertical"
+        android:src="@drawable/shop_back">
+    </ImageView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/andy_bold"
+        android:textAlignment="center"
+        android:text="Sounds">
+
+    </TextView>
+    <com.google.android.material.slider.Slider
+        android:id="@+id/sounds_volume"
+        android:layout_width="300dp"
+        android:layout_height="20dp"
+        android:contentDescription="sounds"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+    </com.google.android.material.slider.Slider>
+
+</LinearLayout>

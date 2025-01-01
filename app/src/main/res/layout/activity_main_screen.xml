@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/game_background1"
+    tools:context=".MainScreen">
+    
+    <TextView
+        android:id="@+id/name_show"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:text="name"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:fontFamily="@font/andy_bold"
+        tools:ignore="MissingConstraints">
+    </TextView>
+
+    <EditText
+        android:id="@+id/input_name"
+        android:layout_width="292dp"
+        android:layout_height="61dp"
+        android:background="@color/white"
+        android:hint="Input your name"
+        android:textAlignment="center"
+        android:fontFamily="@font/andy_bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.247">
+    </EditText>
+
+    <Button
+        android:id="@+id/confirm_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter"
+        android:fontFamily="@font/andy_bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.352" />
+
+    <LinearLayout
+        android:id="@+id/table_tool"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.966">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="47dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.937">
+
+            <ImageView
+                android:id="@+id/settings_navigate"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/settings">
+            </ImageView>
+
+            <ImageView
+                android:id="@+id/shop_navigate"
+                android:layout_height="match_parent"
+                android:layout_width="50dp"
+                android:src="@drawable/coin">
+            </ImageView>
+            <TextView
+                android:id="@+id/coinText"
+                android:layout_height="match_parent"
+                android:layout_width="50dp"
+                android:textColor="@color/white"
+                android:text="coin"
+                android:fontFamily="@font/andy_bold"
+                android:textSize="25dp"
+                android:gravity="center"
+                >
+            </TextView>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            >
+
+            <ImageView
+                android:id="@+id/skillChoose"
+                android:layout_height="match_parent"
+                android:layout_width="50dp"
+                android:src="@drawable/burn"
+                android:layout_weight="1"
+                >
+            </ImageView>
+
+            <ImageView
+                android:id="@+id/switch_skill"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/switch_item">
+
+            </ImageView>
+
+            <ImageView
+                android:layout_height="match_parent"
+                android:layout_width="50dp"
+                android:src="@drawable/ultimate_cast_a"
+                android:layout_weight="1"
+                >
+            </ImageView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            >
+            <ImageView
+                android:id="@+id/minus_level"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:text="right"
+                android:src="@drawable/select_left"
+                android:layout_weight="1">
+            </ImageView>
+            <TextView
+                android:id="@+id/level_select"
+                android:layout_height="match_parent"
+                android:layout_width="50dp"
+                android:text="1"
+                android:fontFamily="@font/andy_bold"
+                android:textSize="30dp"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:background="@drawable/level_select"
+                android:layout_weight="1"
+                >
+            </TextView>
+            <ImageView
+                android:id="@+id/plus_level"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:text="right"
+                android:src="@drawable/select_right"
+                android:layout_weight="1">
+            </ImageView>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+    <com.example.theworldrequiem.ExtendView.AnimationObjectView
+        android:id="@+id/start_button"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@drawable/start_button_2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.598">
+
+    </com.example.theworldrequiem.ExtendView.AnimationObjectView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

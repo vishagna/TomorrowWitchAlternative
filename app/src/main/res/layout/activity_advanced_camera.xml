@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".unuse.AdvancedCamera">
+
+    <include layout="@layout/app_bar"/>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <androidx.camera.view.PreviewView
+        android:id="@+id/preview_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/color_filter"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        app:scaleType="fitCenter"/>
+
+
+
+    <com.example.theworldrequiem.ExtendView.FaceOverlayLayout
+        android:id="@+id/faceOverlayLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+        <Button
+            android:id="@+id/change_camera_side"
+            android:text="Change Side"
+            android:layout_width="100dp"
+            android:layout_height="100dp">
+        </Button>
+
+        <Button
+            android:id="@+id/capture_image"
+            android:text="Capture"
+            android:layout_width="100dp"
+            android:layout_height="100dp">
+        </Button>
+    </LinearLayout>
+
+</LinearLayout>

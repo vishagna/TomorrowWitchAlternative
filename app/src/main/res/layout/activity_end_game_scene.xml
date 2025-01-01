@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".EndGameScene">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/winState"
+            android:visibility="gone"
+            android:layout_width="226dp"
+            android:layout_height="226dp"
+            android:layout_gravity="center"
+            android:src="@drawable/cube"/>
+
+        <ImageView
+            android:id="@+id/loseState"
+            android:visibility="gone"
+            android:layout_gravity="center"
+            android:layout_width="370dp"
+            android:layout_height="352dp"
+            android:src="@drawable/bat_3"/>
+
+
+        <ImageView
+            android:id="@+id/window"
+            android:layout_gravity="center"
+            android:layout_width="370dp"
+            android:layout_height="352dp"
+            android:src="@drawable/window">
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/curtain"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="393dp"
+            android:src="@drawable/curtain">
+        </ImageView>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/infoTable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/endBack"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/shop_back"/>
+            <TextView
+                android:id="@+id/coinClaimed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="27dp"
+                android:fontFamily="@font/andy_bold"
+                android:text="Coin claimed: "/>
+            <TextView
+                android:id="@+id/timeRemain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="27dp"
+                android:fontFamily="@font/andy_bold"
+                android:text="Time remain: "/>
+
+            <TextView
+                android:id="@+id/endState"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#DA0303"
+                android:textSize="50dp"
+                android:fontFamily="@font/andy_bold"
+                android:text="You Lose!"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/light_effect"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:visibility="gone"
+            android:orientation="vertical">
+        </LinearLayout>
+
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
